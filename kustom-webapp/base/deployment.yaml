@@ -8,9 +8,9 @@ spec:
     spec: # Pod spec
       containers:
       - name: mycontainer
-        image: "devopsjourney1/mywebapp:latest"
+        image: "curacount-frontend:latest"
         ports:
-        - containerPort: 80
+        - containerPort: 8888
         envFrom:
         - configMapRef:
             name: mykustom-map
